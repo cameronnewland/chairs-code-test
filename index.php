@@ -65,13 +65,13 @@ $(document).ready(function(){
 	function theLoop(){
 		for (k=0;k<chairs.length;k++) {		
 			if (oddEvenToggler) {
-				$('#the-play-by-play').append("<p>Dismissing chair #"+chairs[k]+". "+(chairs.length-1)+" chairs remain.<p>");
+				$('#the-play-by-play').append("<p>Dismissing chair #"+chairs[k]+". "+(chairs.length)+" chairs remain.<p>");
 				// Dismisses person in chair
 				chairs.splice(k,1);
 				oddEvenToggler = false;
 				k--
 			} else { // Skips person in chair 
-				$('#the-play-by-play').append("<p>Skipping chair #"+chairs[k]+". "+(chairs.length-1)+" chairs remain.<p>");
+				$('#the-play-by-play').append("<p>Skipping chair #"+chairs[k]+". "+(chairs.length)+" chairs remain.<p>");
 				oddEvenToggler = true;
 			}
 		}
