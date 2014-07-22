@@ -15,6 +15,19 @@
 			font-size:150%;
 		}
 
+		.overlay {
+		background: transparent url('overlay.png');
+		opacity: 0.7;
+		z-index: -1;
+		margin: 0px;
+		padding: 0px;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		}
+
 		#answer {
 			font-weight:bold;
 			margin:5% 0;
@@ -47,7 +60,7 @@
 
 	</style>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="/okvideo.min.js"></script>
+	<script src="okvideo.min.js"></script>
 	<script>
 
 $(document).ready(function(){
@@ -95,6 +108,7 @@ $(document).ready(function(){
 	</script>
 </head>
 <body>
+	<div class="overlay"></div>
 
 	<h1>chair<span> (n.)</span></h1>
 
